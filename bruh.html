@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Attribute Selector</title>
+  <style>
+    /* Style all boxes */
+    .box {
+      background-color: lightgray;
+      margin: 10px;
+      border: 1px solid #333;
+    }
+
+    /* Attribute selector: selects all elements whose class contains 'box-' */
+    [class*="box-"] {
+      padding: 20px;
+    }
+
+    /* Extra styles for each box */
+    .box-large {
+      background-color: lightblue;
+    }
+
+    .box-small {
+      background-color: lightgreen;
+    }
+
+    .box-red {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Regular Box</div>
+  <div class="box-large">Large Box</div>
+  <div class="box-small">Small Box</div>
+  <div class="box-red">Red Box</div>
+</body>
+</html>
